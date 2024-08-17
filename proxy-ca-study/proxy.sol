@@ -3,6 +3,12 @@
 
 pragma solidity ^0.8.20;
 
+contract Implementation {
+  bytes32 internal constant _IMPLEMENTATION_SLOT = bytes32(uint256(
+    keccak256('eip1967.proxy.implementation')) - 1
+  );
+}
+
 /**
  * @dev This abstract contract provides a fallback function that delegates all calls to another contract using the EVM
  * instruction `delegatecall`. We refer to the second contract as the _implementation_ behind the proxy, and it has to

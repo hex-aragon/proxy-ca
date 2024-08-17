@@ -38,7 +38,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Receiver.sol": "FunctionSelector"
+			"proxy-ca-study/Receiver.sol": "FunctionSelector"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -52,7 +52,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"Receiver.sol": {
+		"proxy-ca-study/Receiver.sol": {
 			"keccak256": "0x48ff1a4e2434d7ca36ed0f9afba174b63dd2e61ef1bc66d03a17a0b7c2fadbf5",
 			"license": "MIT",
 			"urls": [

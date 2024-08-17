@@ -106,7 +106,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"datalocation.sol": "DataLocations"
+			"proxy-ca-study/datalocation.sol": "DataLocations"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -120,7 +120,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"datalocation.sol": {
+		"proxy-ca-study/datalocation.sol": {
 			"keccak256": "0x884f10b919431a2d0e889440e1c33fcd3f8119c8b73157d77a4216c8fad6a174",
 			"license": "MIT",
 			"urls": [

@@ -1,0 +1,52 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "allocate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"proxy-ca-study/StorageLayout.sol": "StorageLayout"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"proxy-ca-study/StorageLayout.sol": {
+			"keccak256": "0xbde604ac05855ed78fb8d2abeda7c05502df82c9b968ae467243737a4d3e2dc4",
+			"urls": [
+				"bzz-raw://d506ad08c38847d1bc20e53a0e12e61dbfdea6b57617df96b368eff5279cfa71",
+				"dweb:/ipfs/QmenKdHpEf1yFBRzqDyGqhW8VLywnWAihSNMHhkqX1Ynav"
+			]
+		}
+	},
+	"version": 1
+}
