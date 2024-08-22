@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_number0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_number1",
+						"type": "uint256"
+					}
+				],
+				"name": "calc",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "number",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"beacon-proxy-study-simple/implementation1.sol": "Implementation_V1"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"beacon-proxy-study-simple/implementation1.sol": {
+			"keccak256": "0x78b0f90729452e5ca5ea95c7771782dcdbd6eea911fbc4eb93d127245115281b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f88faf02133ca9f01e73f28ad9bdb9e5b1681fc681678f2de6f1b8f6d08cb15e",
+				"dweb:/ipfs/QmYA9xMbeH7CoPh52qaAPsV8AtM18DRP1KbPy7afep3krD"
+			]
+		}
+	},
+	"version": 1
+}

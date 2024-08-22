@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "implementaionAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_logic",
+						"type": "address"
+					}
+				],
+				"name": "upgradeLogic",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"beacon-proxy-study/beacon.sol": "Beacon"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"beacon-proxy-study/beacon.sol": {
+			"keccak256": "0x951dab9e054961d79c30fb09fd66fd7cdfd9b21d1b90bc1f8b9b18c27703bde9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://27c61bc23f7c14fd744d6d28bf1b2e3d82a42e7dacd6ef263155add15aef3af7",
+				"dweb:/ipfs/QmUFpZkmZ9ugx8RjCVVUg8TTfrUxmf96cXbzpn2eBbVY4R"
+			]
+		}
+	},
+	"version": 1
+}

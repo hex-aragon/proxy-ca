@@ -1,0 +1,150 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_beaconAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "symbol",
+						"type": "string"
+					}
+				],
+				"name": "createStatus",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_beaconAddress",
+						"type": "address"
+					}
+				],
+				"name": "createStatusV2",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"beacon-proxy-study/factory.sol": "Factory"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol": {
+			"keccak256": "0x631188737069917d2f909d29ce62c4d48611d326686ba6683e26b72a23bfac0b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7a61054ae84cd6c4d04c0c4450ba1d6de41e27e0a2c4f1bcdf58f796b401c609",
+				"dweb:/ipfs/QmUvtdp7X1mRVyC3CsHrtPbgoqWaXHp3S1ZR24tpAQYJWM"
+			]
+		},
+		"@openzeppelin/contracts@4.7.3/token/ERC20/ERC20.sol": {
+			"keccak256": "0x24b04b8aacaaf1a4a0719117b29c9c3647b1f479c5ac2a60f5ff1bb6d839c238",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://43e46da9d9f49741ecd876a269e71bc7494058d7a8e9478429998adb5bc3eaa0",
+				"dweb:/ipfs/QmUtp4cqzf22C5rJ76AabKADquGWcjsc33yjYXxXC4sDvy"
+			]
+		},
+		"@openzeppelin/contracts@4.7.3/token/ERC20/IERC20.sol": {
+			"keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+				"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+			]
+		},
+		"@openzeppelin/contracts@4.7.3/token/ERC20/extensions/IERC20Metadata.sol": {
+			"keccak256": "0x8de418a5503946cabe331f35fe242d3201a73f67f77aaeb7110acb1f30423aca",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5a376d3dda2cb70536c0a45c208b29b34ac560c4cb4f513a42079f96ba47d2dd",
+				"dweb:/ipfs/QmZQg6gn1sUpM8wHzwNvSnihumUCAhxD119MpXeKp8B9s8"
+			]
+		},
+		"@openzeppelin/contracts@4.7.3/utils/Context.sol": {
+			"keccak256": "0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92",
+				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
+			]
+		},
+		"beacon-proxy-study/beacon.sol": {
+			"keccak256": "0x951dab9e054961d79c30fb09fd66fd7cdfd9b21d1b90bc1f8b9b18c27703bde9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://27c61bc23f7c14fd744d6d28bf1b2e3d82a42e7dacd6ef263155add15aef3af7",
+				"dweb:/ipfs/QmUFpZkmZ9ugx8RjCVVUg8TTfrUxmf96cXbzpn2eBbVY4R"
+			]
+		},
+		"beacon-proxy-study/factory.sol": {
+			"keccak256": "0xead568aebc92654109b9b9fde0b3fd6e547a5f17d2e5d7d1c5b6fdd3397efaa2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a41827f3cba653a7d3cbe9b2fd7cbf086943939d6980d6efd4c0e3b40d9e65bf",
+				"dweb:/ipfs/QmWpCG4LohKBuyLRWxf7jq3q424EKMFhgzLtTGPWwEU3FG"
+			]
+		},
+		"beacon-proxy-study/status.sol": {
+			"keccak256": "0x619d529dbc87cd2da4a3950336981987cad0d5d497b0319a00fa861357257657",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://dd4a3b5916373ae993c662b7f72559a2734a2dc531b369ae571d70d62b9cea6f",
+				"dweb:/ipfs/Qmc4CchG6bjVZVUvR5sdMySXHRTiwCL3H5H69MhCEYdRmF"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,123 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "Deploy",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_beaconAddress",
+						"type": "address"
+					}
+				],
+				"name": "createStore",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_beaconAddress",
+						"type": "address"
+					}
+				],
+				"name": "createStoreV2",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"beacon-proxy-study-simple/factory.sol": "Factory"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"beacon-proxy-study-simple/beacon.sol": {
+			"keccak256": "0xc407a3c8222f9cc136a3763bf9a7eeaf91021d6abde654eaa5616e8d02e51e95",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://149ee0d42ac39ab4dd3ce4d28f560d63c924a29acfe49f02c26698b0676f7e8a",
+				"dweb:/ipfs/QmTRycyKoEKXVJUbSNXqvXegyQL12ndau5Nij9LbeLV1y6"
+			]
+		},
+		"beacon-proxy-study-simple/factory.sol": {
+			"keccak256": "0xdda523820b2b93959a7f2873291f2dabe17464138fcbe4c12026dd806a52cc47",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0dd377660a1aca4abe4ca0455c695dfd7d54b1eb366f5fb3fc63e91524335f21",
+				"dweb:/ipfs/QmPsCCCKWjjEKh3ZMLJTU5XfDuKPjSX7Xwb1qkdS4MBmMJ"
+			]
+		},
+		"beacon-proxy-study-simple/store.sol": {
+			"keccak256": "0xb4400b9cbdacc51b0d4e71c400a1ed33418a92bd582939adcad90e86af7fd02c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://125278242d189a434d173ad0d86d3c53fe7b961377ef8b63b5a0b9af47e9016c",
+				"dweb:/ipfs/QmdezRJ27T39sbdM6zWe71xEE8ZABwWK9gmUqVHytrdhrF"
+			]
+		}
+	},
+	"version": 1
+}
