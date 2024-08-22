@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
-pragma solidity >=0.4.9 <0.9.0;
+pragma solidity ^0.8.13;
 pragma experimental ABIEncoderV2;
 
 interface IHederaTokenService {
@@ -274,7 +274,7 @@ interface IHederaTokenService {
     /// A fee to assess during a transfer that changes ownership of an NFT. Defines the fraction of
     /// the fungible value exchanged for an NFT that the ledger should collect as a royalty. ("Fungible
     /// value" includes both ℏ and units of fungible HTS tokens.) When the NFT sender does not receive
-    /// any fungible value, the ledger will assess the fallback fee, if present, to the new NFT owner.
+    /// any fungible value, the ledger will assess the fallback Preferencesfee, if present, to the new NFT owner.
     /// Royalty fees can only be added to tokens of type type NON_FUNGIBLE_UNIQUE.
     struct RoyaltyFee {
         // A fraction's numerator of fungible value exchanged for an NFT to collect as royalty

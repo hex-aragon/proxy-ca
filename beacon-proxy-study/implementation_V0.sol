@@ -18,6 +18,7 @@ contract implementation_V0 is ERC20 {
         _mint(msg.sender, amount);
         return totalSupply();
     }
+    
      function getToalSupply() public view returns(uint) {
         return totalSupply() * 1;
     }

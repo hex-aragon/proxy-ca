@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_number0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_number1",
+						"type": "uint256"
+					}
+				],
+				"name": "calc",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "number",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"implementation.sol": "Implementation_V0"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"implementation.sol": {
+			"keccak256": "0xd9271e72d81868eb083583c11cf09f20251e5a4a9264de91c1138f4df0f5e1ed",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6cfffc22ca03904a49d936c93cf038d31bcf16b9b6ca86899e25243889222d08",
+				"dweb:/ipfs/QmNeM9UJfweaiGtPhtfEu6sUFQDaBXyLqNgGEsvceVn6st"
+			]
+		}
+	},
+	"version": 1
+}

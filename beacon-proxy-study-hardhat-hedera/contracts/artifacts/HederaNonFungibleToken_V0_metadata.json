@@ -1,0 +1,373 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"name": "CallResponseEvent",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_number0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_number1",
+						"type": "uint256"
+					}
+				],
+				"name": "calc",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "symbol",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "memo",
+						"type": "string"
+					},
+					{
+						"internalType": "int64",
+						"name": "maxSupply",
+						"type": "int64"
+					},
+					{
+						"internalType": "int64",
+						"name": "autoRenewPeriod",
+						"type": "int64"
+					}
+				],
+				"name": "createNft",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes[]",
+						"name": "metadata",
+						"type": "bytes[]"
+					}
+				],
+				"name": "mintNft",
+				"outputs": [
+					{
+						"internalType": "int64",
+						"name": "",
+						"type": "int64"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "number",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "encodedFunctionSelector",
+						"type": "bytes"
+					}
+				],
+				"name": "redirectForToken",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "responseCode",
+						"type": "int256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "response",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "int64",
+						"name": "responseCode",
+						"type": "int64"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "serialNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFromNFT",
+				"outputs": [
+					{
+						"internalType": "int64",
+						"name": "responseCode",
+						"type": "int64"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "receiver",
+						"type": "address"
+					},
+					{
+						"internalType": "int64",
+						"name": "serial",
+						"type": "int64"
+					}
+				],
+				"name": "transferNft",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"redirectForToken(address,bytes)": {
+					"params": {
+						"encodedFunctionSelector": "The function selector from the ERC20 interface + the bytes input for the function called",
+						"token": "The token address"
+					},
+					"returns": {
+						"response": "The result of the call that had been encoded and sent for execution.",
+						"responseCode": "The response code for the status of the request. SUCCESS is 22."
+					}
+				},
+				"transferFrom(address,address,address,uint256)": {
+					"params": {
+						"amount": "The amount of tokens to transfer from `from` to `to`",
+						"from": "The account address of the owner of the token, on the behalf of which to transfer `amount` tokens",
+						"to": "The account address of the receiver of the `amount` tokens",
+						"token": "The address of the fungible Hedera token to transfer"
+					},
+					"returns": {
+						"responseCode": "The response code for the status of the request. SUCCESS is 22."
+					}
+				},
+				"transferFromNFT(address,address,address,uint256)": {
+					"params": {
+						"from": "The account address of the owner of `serialNumber` of `token`",
+						"serialNumber": "The NFT serial number to transfer",
+						"to": "The account address of the receiver of `serialNumber`",
+						"token": "The address of the non-fungible Hedera token to transfer"
+					},
+					"returns": {
+						"responseCode": "The response code for the status of the request. SUCCESS is 22."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"events": {
+				"CallResponseEvent(bool,bytes)": {
+					"notice": "Generic event"
+				}
+			},
+			"kind": "user",
+			"methods": {
+				"redirectForToken(address,bytes)": {
+					"notice": "Redirect for token"
+				},
+				"transferFrom(address,address,address,uint256)": {
+					"notice": "Only applicable to fungible tokens"
+				},
+				"transferFromNFT(address,address,address,uint256)": {
+					"notice": "Transfers `serialNumber` of `token` from `from` to `to` using the allowance mechanism. Only applicable to NFT tokens"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"HederaNonFungibleToken_V0.sol": "HederaNonFungibleToken_V0"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"HederaNonFungibleToken_V0.sol": {
+			"keccak256": "0xb6dd75cd4fe9d93f61b1f1a949c62fdff51e9251d1789ac3878fd26c88752cf2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ce24c82b09bf292b9ab4318786d4df3896979ef54736646ce0266896ba8f7b6c",
+				"dweb:/ipfs/QmZzewVjnenxttPTy33oqKQGNZYzcyRchnjgLtDDhByU35"
+			]
+		},
+		"hedera-system-contracts/ExpiryHelper.sol": {
+			"keccak256": "0x675744e7551905b2a7da9bc2a97720218c9a7bc361215a77fe6b2588113572e7",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://51150e5e1a346f8fecde7d4778181cbe2dbafb06d8af3fd33c7495d57e85c598",
+				"dweb:/ipfs/Qmb68UhFSMHSpJhUiEV9DiXbBo6pNLSpfjYoFePHhu4Zm3"
+			]
+		},
+		"hedera-system-contracts/HederaResponseCodes.sol": {
+			"keccak256": "0x24bddb16c868bfa2efbe0e2651153e8a7f7d938064f1a6c58bd29c1d2a4279b3",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://44f700d89fcbd3ac6fd4777872d383a7f6ace605ac1cfc16df4aef1bf045d546",
+				"dweb:/ipfs/QmVRDJATihcAqpPiPWqmjdjAoNV3CGf7F9uKd8iWsUXqjU"
+			]
+		},
+		"hedera-system-contracts/HederaTokenService.sol": {
+			"keccak256": "0x568e3861550f58c91ac8967b3a15f3b0a50f6b8ad62bc80b451da9b027a0bd87",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://c117128af6ff65c5ef78e3bd4918874a41db8e73f0ab2fd58e0e5c581c79eb6d",
+				"dweb:/ipfs/QmSYMruL9VfSZxyEEu4PiDMnYBoEubj2YD359Fq5GYQRNc"
+			]
+		},
+		"hedera-system-contracts/IHederaTokenService.sol": {
+			"keccak256": "0x7f6b105ecaf274e7ef4335b311166ee15a0f56a949dfab8feaa9685531fc6acb",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://2b06b6829053dbfbe6f57d73111d9afe0b209d01faf0a09ec05f0869652fde57",
+				"dweb:/ipfs/QmdJ3DikhP6LsTaFugHDkwMmNykofiDBbWJc9QspRQyCUx"
+			]
+		},
+		"hedera-system-contracts/KeyHelper.sol": {
+			"keccak256": "0x0dd468d1302ea5ed4408473a6408883fea1d1e1e4d9acd2739b2d06c45c868f1",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://05555a11279d4b2fe0e6f6d1985647274c95b61f1f2a77c5fd01e11c9e333261",
+				"dweb:/ipfs/QmahuhrgUJ7dGukoJX4qEZXPi6wur3axpAzC8y5nwQrgAk"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "implementation",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_implementation",
+						"type": "address"
+					}
+				],
+				"name": "upgradeImplementation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"beacon.sol": "Beacon"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"beacon.sol": {
+			"keccak256": "0x6dd87828c8f691de3ca5a2d762b38c82b9d789d28f405724828c89b2fe2762cf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://def539390c565848c45bfa968fb58bdf95b4d83a9d88e4b5ee1bd6793daf13da",
+				"dweb:/ipfs/QmVBYYTGHsMGEd1J8mBuksueF8Zdeiop2ckn2WuRFQSFWs"
+			]
+		}
+	},
+	"version": 1
+}
