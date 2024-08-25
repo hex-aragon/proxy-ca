@@ -20,7 +20,7 @@ contract HederaNonFungibleToken_V0 is ExpiryHelper, KeyHelper, HederaTokenServic
             string memory symbol, 
             string memory memo, 
             int64 maxSupply,  
-            int64 autoRenewPeriod
+            string memory uri
         ) external payable returns (address){
 
         IHederaTokenService.TokenKey[] memory keys = new IHederaTokenService.TokenKey[](1);
@@ -36,13 +36,30 @@ contract HederaNonFungibleToken_V0 is ExpiryHelper, KeyHelper, HederaTokenServic
         token.maxSupply = maxSupply;
         token.tokenKeys = keys;
         token.freezeDefault = false;
-        token.expiry = createAutoRenewExpiry(address(this), autoRenewPeriod); // Contract auto-renews the token
+        // token.expiry = createAutoRenewExpiry(address(this), autoRenewPeriod); // Contract auto-renews the token
+        token.expiry = createAutoRenewExpiry(address(this), 7_776_000); 
 
         (int responseCode, address createdToken) = HederaTokenService.createNonFungibleToken(token);
 
         if(responseCode != HederaResponseCodes.SUCCESS){
             revert("Failed to create non-fungible token");
         }
+
+        int64[] memory serial;
+        for (int64 i = 0; i < maxSupply; i++) {
+            bytes memory metadata = bytes(uri);
+            bytes[] memory metadatas = new bytes[](1);
+            metadatas[0] = metadata;
+            (responseCode, , serial) = HederaTokenService.mintToken(
+                createdToken,
+                0,
+                metadatas
+            );
+            if (responseCode != HederaResponseCodes.SUCCESS) {
+                revert("failed to mint non-fungible token");
+        }
+        }
+
         return createdToken;
     }
 

@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.13+commit.abaa5c0e"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -65,9 +65,9 @@
 						"type": "int64"
 					},
 					{
-						"internalType": "int64",
-						"name": "autoRenewPeriod",
-						"type": "int64"
+						"internalType": "string",
+						"name": "uri",
+						"type": "string"
 					}
 				],
 				"name": "createNft",
@@ -306,9 +306,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"HederaNonFungibleToken_V0.sol": "HederaNonFungibleToken_V0"
+			"contracts/HederaNonFungibleToken_V0.sol": "HederaNonFungibleToken_V0"
 		},
-		"evmVersion": "london",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -320,15 +320,15 @@
 		"remappings": []
 	},
 	"sources": {
-		"HederaNonFungibleToken_V0.sol": {
-			"keccak256": "0xb6dd75cd4fe9d93f61b1f1a949c62fdff51e9251d1789ac3878fd26c88752cf2",
+		"contracts/HederaNonFungibleToken_V0.sol": {
+			"keccak256": "0x84e90d491280d62f3ee0243585da49b485f07ac7fb61b72c723b3d3e9009da44",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ce24c82b09bf292b9ab4318786d4df3896979ef54736646ce0266896ba8f7b6c",
-				"dweb:/ipfs/QmZzewVjnenxttPTy33oqKQGNZYzcyRchnjgLtDDhByU35"
+				"bzz-raw://3931ffa265e2e0bc71471e969c7460d2a8c7d2f97dcb9ae066b05288d6f05742",
+				"dweb:/ipfs/QmVyExDHybAgabdZzqbA1BhsWY894VARz7uCdPoWsUH4Ug"
 			]
 		},
-		"hedera-system-contracts/ExpiryHelper.sol": {
+		"contracts/hedera-system-contracts/ExpiryHelper.sol": {
 			"keccak256": "0x675744e7551905b2a7da9bc2a97720218c9a7bc361215a77fe6b2588113572e7",
 			"license": "Apache-2.0",
 			"urls": [
@@ -336,7 +336,7 @@
 				"dweb:/ipfs/Qmb68UhFSMHSpJhUiEV9DiXbBo6pNLSpfjYoFePHhu4Zm3"
 			]
 		},
-		"hedera-system-contracts/HederaResponseCodes.sol": {
+		"contracts/hedera-system-contracts/HederaResponseCodes.sol": {
 			"keccak256": "0x24bddb16c868bfa2efbe0e2651153e8a7f7d938064f1a6c58bd29c1d2a4279b3",
 			"license": "Apache-2.0",
 			"urls": [
@@ -344,7 +344,7 @@
 				"dweb:/ipfs/QmVRDJATihcAqpPiPWqmjdjAoNV3CGf7F9uKd8iWsUXqjU"
 			]
 		},
-		"hedera-system-contracts/HederaTokenService.sol": {
+		"contracts/hedera-system-contracts/HederaTokenService.sol": {
 			"keccak256": "0x568e3861550f58c91ac8967b3a15f3b0a50f6b8ad62bc80b451da9b027a0bd87",
 			"license": "Apache-2.0",
 			"urls": [
@@ -352,7 +352,7 @@
 				"dweb:/ipfs/QmSYMruL9VfSZxyEEu4PiDMnYBoEubj2YD359Fq5GYQRNc"
 			]
 		},
-		"hedera-system-contracts/IHederaTokenService.sol": {
+		"contracts/hedera-system-contracts/IHederaTokenService.sol": {
 			"keccak256": "0x7f6b105ecaf274e7ef4335b311166ee15a0f56a949dfab8feaa9685531fc6acb",
 			"license": "Apache-2.0",
 			"urls": [
@@ -360,7 +360,7 @@
 				"dweb:/ipfs/QmdJ3DikhP6LsTaFugHDkwMmNykofiDBbWJc9QspRQyCUx"
 			]
 		},
-		"hedera-system-contracts/KeyHelper.sol": {
+		"contracts/hedera-system-contracts/KeyHelper.sol": {
 			"keccak256": "0x0dd468d1302ea5ed4408473a6408883fea1d1e1e4d9acd2739b2d06c45c868f1",
 			"license": "Apache-2.0",
 			"urls": [
