@@ -1,3 +1,6 @@
 [submodule "setup-foundry-and-write-basic-unit-test"]
 	path = setup-foundry-and-write-basic-unit-test
 	url = git@github.com:hex-aragon/proxy-ca.git
+[submodule "hts-test-foundry/lib/forge-std"]
+	path = hts-test-foundry/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
